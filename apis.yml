@@ -1,7 +1,30 @@
 aid: huscarl
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/huscarl.png
 name: Huscarl
-description: Huscarl is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Huscarl is an AI-native actuarial advisory firm focused on corporate
+  self-insurance and captive insurance programs. The company provides
+  actuarial intelligence and independent advisory for captive managers and
+  owners, including feasibility studies for captive insurance entities,
+  pricing and underwriting of uncommon risks with limited data, and reserve
+  estimation and actuarial opinions. It helps large corporations determine
+  whether they are paying the right amount for coverage and optimize their
+  insurance strategy. Huscarl was founded by Alex Musy (CEO) and Paulien
+  Jeunesse, who previously built cyber parametric insurance at Descartes
+  Underwriting, and is a Y Combinator (Spring 2026) company based in San
+  Francisco. As a professional-services actuarial firm it currently exposes
+  no public developer API, SDK, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/huscarl/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +32,33 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-industry: insurance
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Insurance
+- Actuarial
+- Captive Insurance
+- Self-Insurance
+- Risk Management
+- Underwriting
+- Y Combinator
+- Artificial Intelligence
 apis: []
+common:
+- type: DomainSecurity
+  url: security/huscarl-domain-security.yml
+- type: Website
+  url: https://www.huscarl.io/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
